@@ -7,8 +7,6 @@ import { useNavigate } from "react-router-dom";
 
 const Questions = ({ res, setRes }) => {
   const navigate = useNavigate();
-  // const [res, setRes] = props
-  // let a= [1:'true', 2:'false']
    console.log(res);
   const handleClick = (questions, ans) => {
     if (ans == questions.answers[questions.correctAnswer - 1]) {
@@ -22,7 +20,6 @@ const Questions = ({ res, setRes }) => {
     } else {
       // alert("incorrect answer");
       let id = questions.id;
-      // console.log("fcgguthfu", id);
       let res2 = res;
       res2[id] = false;
 
@@ -45,6 +42,10 @@ const Questions = ({ res, setRes }) => {
       navigate("/result");
     }
   };
+
+
+
+
   return (
     <div>
       <div class="p2">
@@ -60,8 +61,10 @@ const Questions = ({ res, setRes }) => {
                 <img id="quest" src={questions.question.image} />
                 <h1>{questions.question.question}</h1>
                 <div class="opt">
+                  <br />
+                  <hr />
                   <h1>Options</h1>
-                  {/* {console.log(questions)} */}
+                  <br />
                   {questions &&
                     questions.answers &&
                     questions.answers.map((ans) => (
