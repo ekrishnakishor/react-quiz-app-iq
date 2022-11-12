@@ -22,7 +22,7 @@ const Questions = ({ res, setRes }) => {
     } else {
       // alert("incorrect answer");
       let id = questions.id;
-      console.log("fcgguthfu", id);
+      // console.log("fcgguthfu", id);
       let res2 = res;
       res2[id] = false;
 
