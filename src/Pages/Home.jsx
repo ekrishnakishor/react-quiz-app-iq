@@ -17,10 +17,11 @@ const Home = () => {
           </div>
           <div class="nav-div-right">
             <input type="text" placeholder="Search among 332 tests" />
+            <Link to={"/"}>
             <img
               src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png"
               alt="nav-user"
-            />
+            /></Link>
             </div>
     </menu>
     </div>
