@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #6b6fbc;
+    color: white;
+}
+
+.q {
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    color: white;
+    margin-top: 20px;
+}
+
+.q img{
+    width: 10%;
+}
+
+.opt{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+img#quest{
+    width: 50%;
+}
